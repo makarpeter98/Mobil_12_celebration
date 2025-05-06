@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:5:5-83
-11-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:5:5-83
+11-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:6:5-97
-12-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:6:5-97
+12-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:6:22-78
 13
 14    <permission
 14-->[androidx.core:core:1.13.0] C:\Users\makar\.gradle\caches\8.10.2\transforms\1b89a4ef0596eddf891071b8ad4b689b\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
@@ -27,43 +27,43 @@
 18-->[androidx.core:core:1.13.0] C:\Users\makar\.gradle\caches\8.10.2\transforms\1b89a4ef0596eddf891071b8ad4b689b\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:8:5-27:19
+20-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:8:5-27:19
 21        android:allowBackup="true"
-21-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:9:9-35
+21-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.13.0] C:\Users\makar\.gradle\caches\8.10.2\transforms\1b89a4ef0596eddf891071b8ad4b689b\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:10:9-65
+23-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:10:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:11:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:12:9-43
+27-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:12:9-43
 28        android:label="@string/app_name"
-28-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:13:9-41
+28-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:13:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:14:9-54
+29-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:14:9-54
 30        android:supportsRtl="true"
-30-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:15:9-35
+30-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:15:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.Mobil_12_02_API31" >
-32-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:16:9-55
+32-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:16:9-55
 33        <activity
-33-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:18:9-26:20
+33-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:18:9-26:20
 34            android:name="com.example.mobil_12_02_api31.MainActivity"
-34-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:19:13-41
+34-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:19:13-41
 35            android:exported="true" >
-35-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:20:13-36
+35-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:20:13-36
 36            <intent-filter>
-36-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:21:13-25:29
+36-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:21:13-25:29
 37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:22:17-69
-37-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:22:25-66
+37-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:22:17-69
+37-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:22:25-66
 38
 39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:24:17-77
-39-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_vegleges\app\src\main\AndroidManifest.xml:24:27-74
+39-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:24:17-77
+39-->C:\Users\makar\AndroidStudioProjects\12_ora\Mobil_12_02_API31_alap\app\src\main\AndroidManifest.xml:24:27-74
 40            </intent-filter>
 41        </activity>
 42

@@ -38,9 +38,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //EdgeToEdge.enable(this);
-        //setContentView(R.layout.activity_main);
-        binding.downloadButton.setOnClickListener(button ->download());
+        binding.downloadButton.setOnClickListener(button -> download());
+        binding.playButton.setOnClickListener(button -> playSong());
+        path = this.getFilesDir().getParent();
+        mPlayer = new MediaPlayer();
     }
     private void download() {
         new Thread(() -> {

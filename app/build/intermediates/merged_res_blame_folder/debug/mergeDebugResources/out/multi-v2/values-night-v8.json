@@ -4,7 +4,7 @@
             "outputFile": "com.example.mobil_12_02_api31.app-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\makar\\AndroidStudioProjects\\12_ora\\Mobil_12_02_API31_vegleges\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\makar\\AndroidStudioProjects\\12_ora\\Mobil_12_02_API31_alap\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
