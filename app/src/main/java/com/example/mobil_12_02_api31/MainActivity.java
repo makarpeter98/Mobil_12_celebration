@@ -1,4 +1,4 @@
-package com.example.mobil_12_02_api31;
+package com.example.mobil_12_02_api31_vegleges;
 
 
 import android.media.MediaPlayer;
@@ -13,6 +13,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
+import com.example.mobil_12_02_api31.databinding.ActivityMainBinding;
+
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -23,7 +26,6 @@ import java.net.URLConnection;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.example.mobil_12_02_api31.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     //Teszt
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //EdgeToEdge.enable(this);
+        //setContentView(R.layout.activity_main);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.downloadButton.setOnClickListener(button -> download());
@@ -44,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         mPlayer = new MediaPlayer();
     }
     private void download() {
+
         new Thread(() -> {
             int count;
             try {
@@ -90,6 +95,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playSong() {
+        try {
+            Log.e("play", "lejátszás elindiul");
+            if (mPlayer.isPlaying()) return;
+            Log.e("play", "útvonal: " + path + "/files/song.mp3");
+            mPlayer.setDataSource(path + "/files/song.mp3");
 
+            Log.e("play", path + "/files/song.mp3");
+
+            mPlayer.prepare();
+            // Start playing the Music file
+            mPlayer.start();
+        } catch (Exception e) {
+            Log.e("play", e.getMessage());
+        }
     }
 }
