@@ -36,11 +36,56 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         //EdgeToEdge.enable(this);
         //setContentView(R.layout.activity_main);
+        binding.downloadButton.setOnClickListener(button ->download());
     }
     private void download() {
+        new Thread(() -> {
+            int count;
+            try {
+                Log.e("download", "letöltés indul");
+                URL url = new URL("https://arato.inf.unideb.hu/kocsis.gergely/song.mp3");
+                Log.e("download", "URL csatkakozás elso lepes");
+                URLConnection connection = url.openConnection();
+                Log.e("download", "URL csatkakozás masodik lepes");
+                connection.connect();
+                Log.e("download", "URL csatkakozás sikeres");
+                int lenghtOfFile = connection.getContentLength();
+                Log.e("download", "Fájlméret: " + lenghtOfFile);
+                // input stream to read file - with 8k buffer
+                InputStream input = new BufferedInputStream(url.openStream(), 10 * 1024);
+                // Output stream to write file
+                OutputStream output = new FileOutputStream(path + "/files/song.mp3");
+                byte data[] = new byte[1024];
+                long total = 0;
+                int prevPercentage = 0;
+                while ((count = input.read(data)) != -1) {
+                    total += count;
+                    long finalTotal = total;
 
+                    int actualPercentage = (int)(finalTotal * 100) / lenghtOfFile;
+                    if(actualPercentage > prevPercentage) {
+                        Log.e("download", "letöltés: " + actualPercentage);
+                        runOnUiThread(() -> {
+                            binding.progressBar.setProgress(actualPercentage);
+                            binding.progressTextView.setText("" + actualPercentage + "%");
+                        });
+                        prevPercentage = actualPercentage;
+                    }
+
+                    output.write(data, 0, count);
+                }
+                output.flush();
+                output.close();
+                input.close();
+            } catch (Exception e) {
+                Log.e("Error: ", e.getMessage());
+            }
+        }
+        ).start();
     }
 
     public void playSong() {
