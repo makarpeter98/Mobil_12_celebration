@@ -26,7 +26,7 @@ import java.util.concurrent.Executors;
 import com.example.mobil_12_02_api31.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-
+    //Teszt
     MediaPlayer mPlayer;
     private ActivityMainBinding binding;
     private String path;
